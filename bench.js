@@ -15,6 +15,15 @@ suite
   .add('text search', () => {
     db.search({nom: 'metz'})
   })
+  .add('text search', () => {
+    db.search({nom: 'sai'})
+  })
+  .add('text search', () => {
+    db.search({nom: 'sain'})
+  })
+ .add('text search', () => {
+    db.search({nom: 'saint'})
+  })
   .add('CP search', () => {
     db.search({codePostal: '54490'})
   })
