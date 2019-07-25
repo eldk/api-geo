@@ -30,7 +30,7 @@
     "xo": "^0.24.0"
   },
   "scripts": {
-    "bench": "DEBUG=store,bench node bench",
+    "bench": "DEBUG=store,bench node --max_old_space_size=2048 bench",
     "lint": "xo",
     "start": "node --max_old_space_size=2048 server",
     "test-unit": "NODE_OPTIONS=--max_old_space_size=2048 nyc mocha --exit",
