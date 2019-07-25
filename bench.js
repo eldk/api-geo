@@ -21,9 +21,18 @@ suite
   .add('text search', () => {
     db.search({nom: 'sain'})
   })
- .add('text search', () => {
+  .add('text search', () => {
     db.search({nom: 'saint'})
   })
+  .add('text search', () => {
+    db.search({nom: 'saint-'})
+  })
+  .add('text search', () => {
+     db.search({nom: 'saint-e'})
+   })
+  .add('text search', () => {
+     db.search({nom: 'saint-etienne'})
+   })
   .add('CP search', () => {
     db.search({codePostal: '54490'})
   })
